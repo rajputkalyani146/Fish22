@@ -1,0 +1,47 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fish Prediction</title>
+    </head>
+
+    <body style="background-color: rgba(0, 117, 123, 0.632);">
+        <h1> Fish Prediction </h1>
+        <form method="GET" action="/predict">    
+            <label>Weight:</label>
+            <input type = "text" name = "Weight">
+            </select>    
+            <br>
+            <br>    
+            <label>Length1:</label>
+            <input type = "text" name = "Length1">
+            </select>    
+            <br>
+            <br>    
+            <label>Length2:</label>
+            <input type = "text" name = "Length2">
+            </select>    
+            <br>
+            <br>    
+            <label>Length3:</label>
+            <input type = "text" name = "Length3">            
+            <br>
+            <br>    
+            <label>Height:</label>
+            <input type = "text" name = "Height">    
+            <br>
+            <br>    
+            <label>Width:</label>
+            <input type = "text" name = "Width">            
+            <br>
+            <br>
+            
+            <input type = "submit" value="SUBMIT">    
+            <br>
+            <br>    
+            <p> Fish Type : <b> {{ prediction }} </b> </p>     
+        </form>  
+    
+    </body>
+</html>
